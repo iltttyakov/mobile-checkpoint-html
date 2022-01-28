@@ -1,0 +1,97 @@
+.button {
+  position: relative;
+  z-index: 1;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 15px 30px;
+  padding-top: 14px;
+
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    height: 100%;
+    width: 0;
+
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+
+  &--fill {
+    &.button--white {
+      color: #000000;
+
+      background: #FFFFFF;
+      border: 1px solid #FFFFFF;
+
+      &::before {
+        background-color: #000000;
+      }
+    }
+
+    &.button--black {
+      color: #ffffff;
+
+      background: #000000;
+      border: 1px solid #000000;
+
+      &::before {
+        background-color: #ffffff;
+      }
+    }
+
+    &:hover {
+      &.button--white {
+        color: #ffffff;
+      }
+
+      &.button--black {
+        color: #000000;
+      }
+    }
+  }
+
+  &--stroke {
+    &.button--white {
+      color: #FFFFFF;
+
+      background: transparent;
+      border: 1px solid #FFFFFF;
+
+      &::before {
+        background-color: #FFFFFF;
+      }
+    }
+
+    &:hover {
+      color: #000000;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .button {
+    height: 49px;
+    padding: 12px 19px 13px;
+  }
+}

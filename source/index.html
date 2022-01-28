@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Mobile checkpoint</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preload" href="fonts/SFProDisplay-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFProDisplay-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFProDisplay-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SFProDisplay-Semibold.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div style="display:none">
+  <include src="build/img/sprite.svg"></include>
+</div>
+
+<header class="header bg-black" id="header">
+  <div class="header__container container container--fluid">
+
+    <a href="#" class="header__logo logo">
+      <img class="logo__image" src="img/logo.svg" width="233" height="29"/>
+    </a>
+
+    <nav id="header-menu" class="header__menu">
+      <div class="header__mobile-menu-navigation">
+        <div class="header__logo logo">
+          <img class="logo__image" src="img/logo-black.svg" width="233" height="29"/>
+        </div>
+        <button class="header__burger burger burger--open" id="close-menu">
+        </button>
+      </div>
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="#functional" class="menu__link">
+            <span class="menu__link-text">Функционал</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#how" class="menu__link">
+            <span class="menu__link-text">Устройство</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#advantages" class="menu__link">
+            <span class="menu__link-text">Преимущества</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#reviews" class="menu__link">
+            <span class="menu__link-text">Отзывы</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#rates" class="menu__link">
+            <span class="menu__link-text">Цена</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu menu--mobile">
+        <li class="menu__item">
+          <a href="#usp" class="menu__link">
+            <span class="menu__number">01/</span><span class="menu__link-text">Главная</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#functional" class="menu__link">
+            <span class="menu__number">02/</span><span class="menu__link-text">Функционал</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#how" class="menu__link">
+            <span class="menu__number">03/</span><span class="menu__link-text">Устройство</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#banner" class="menu__link">
+            <span class="menu__number">04/</span><span class="menu__link-text">Пробная версия</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#advantages" class="menu__link">
+            <span class="menu__number">05/</span><span class="menu__link-text">Преимущества</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#reviews" class="menu__link">
+            <span class="menu__number">06/</span><span class="menu__link-text">Отзывы</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="#rates" class="menu__link">
+            <span class="menu__number">07/</span><span class="menu__link-text">Цена</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <a class="header__phone" href="tel:+74958739222">+7(495) 873 92 22</a>
+
+    <button class="header__burger burger" id="open-menu">
+      <svg class="burger__icon" width="26" height="26" aria-hidden="true" role="img">
+        <use xlink:href="#icon-burger"></use>
+      </svg>
+    </button>
+
+  </div>
+</header>
+
+
+<section data-navigation-number="1" class="usp bg-black" id="usp">
+  <div class="usp__container container container--inner">
+
+    <h1 class="usp__title">
+      Автоматизация строительного бизнеса для подрядных организаций
+    </h1>
+
+    <p class="usp__subtitle ">
+      Мобильная проходная- сервис для десктопа и мобильного. Позволяет автоматически отслеживать перемещение
+      персонала,
+      инструментов, прогресс и сроки по проектам, строит финансовую аналитику.
+    </p>
+
+    <div class="usp__buttons">
+      <button class="open-popup usp__button button button--fill button--white">
+        Получить консультацию
+      </button>
+      <button class="usp__button usp__button--trial button button--stroke button--white">
+        Попробовать бесплатно
+      </button>
+    </div>
+
+    <img
+      class="wow bounceInRight usp__image usp__image--phone"
+      src="img/usp-iphone.png"
+      width="477" height="771"
+    />
+    <img
+      class="wow bounceInRight usp__image usp__image--message"
+      data-wow-delay="0.2s"
+      src="img/usp-message.png"
+      width="320" height="259"
+    />
+
+  </div>
+</section>
+
+
+<div class="vertical-navigation">
+  <div class="vertical-navigation__container">
+    <ul class="vertical-navigation__list" id="vertical-navigation-list">
+      <li class="vertical-navigation__item">
+        <a class="vertical-navigation__link vertical-navigation__link--active" href="#header">
+          01
+          <span class="vertical-navigation__name">Главная</span>
+        </a>
+      </li>
+      <li class="vertical-navigation__item vertical-navigation__item--active">
+        <a class="vertical-navigation__link" href="#functional">
+          02
+          <span class="vertical-navigation__name">Функционал</span>
+        </a>
+      </li>
+      <li class="vertical-navigation__item ">
+        <a class="vertical-navigation__link" href="#how">
+          03
+          <span class="vertical-navigation__name">Устройство</span>
+        </a>
+      </li>
+      <li class="vertical-navigation__item ">
+        <a class="vertical-navigation__link" href="#banner">
+          04
+          <span class="vertical-navigation__name">Пробная версия</span>
+        </a>
+      </li>
+      <li class="vertical-navigation__item ">
+        <a class="vertical-navigation__link" href="#advantages">
+          05
+          <span class="vertical-navigation__name">Преимущества</span>
+        </a>
+      </li>
+      <li class="vertical-navigation__item ">
+        <a class="vertical-navigation__link" href="#reviews">
+          06
+          <span class="vertical-navigation__name">Отзывы</span>
+        </a>
+      </li>
+      <li class="vertical-navigation__item ">
+        <a class="vertical-navigation__link" href="#rates">
+          07
+          <span class="vertical-navigation__name">Цена</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <section class="vertical-navigation-section functional bg-black" id="functional">
+
+    <div id="functional-staff" class="functional__block functional__block--staff">
+      <div class="functional__container container container--inner">
+        <div class="functional__text-container">
+          <p class="functional__subtitle">Функционал</p>
+          <h2 class="functional__title title title--h2">
+            Управление персоналом
+          </h2>
+          <div class="functional__text">
+            <p>
+              Контроль доступа на объект по Face-ID через мобильное приложение. Учет рабочих часов, часов простоя или
+              вынужденного простоя.
+            </p>
+            <p>
+              Автоматический расчет заработной платы по часам, расчет отпуска и больничного.
+            </p>
+            <p>
+              База данных сотрудников- менеджеров, прорабов, рабочих со статусом -действующий, в отпуске или на
+              больничном, в резерве.
+            </p>
+            <p>
+              Контроль уровней доступа менеджеров к базе.
+            </p>
+          </div>
+        </div>
+        <div class="functional__image-container">
+          <img class="functional__image" src="img/functional-staff.png" width="815" height="771"/>
+        </div>
+      </div>
+    </div>
+
+    <div id="functional-objects" class="functional__block functional__block--objects">
+      <div class="functional__container container container--inner">
+        <div class="functional__text-container">
+          <p class="functional__subtitle">Функционал</p>
+          <h2 class="functional__title title title--h2">
+            Управление объектами
+          </h2>
+          <div class="functional__text">
+            <p>
+              Контроль сроков, учет фактического времени выполнения работ, технологические перерывы или вынужденные
+              простои .
+            </p>
+            <p>
+              Автоматический расчет прибыли или убытков. Построение аналитических таблиц и графиков для анализа
+              эффективности
+            </p>
+            <p>
+              Автоматический контроль сотрудников на объекте- информация кто и когда, сколько работал на объекте.
+            </p>
+            <p>
+              Контроль уровней доступа к базе. Простое создание и редактирование объектов статусе -в работе,
+              планируются,
+              завершенные.
+            </p>
+          </div>
+        </div>
+        <div class="functional__image-container">
+          <img class="functional__image" src="img/functional-objects.png" width="944" height="628"/>
+        </div>
+      </div>
+    </div>
+
+    <div id="functional-tools" class="functional__block functional__block--tools">
+      <div class="functional__container container container--inner">
+        <div class="functional__text-container">
+          <p class="functional__subtitle">Функционал</p>
+          <h2 class="functional__title title title--h2">
+            Управление инструментом
+          </h2>
+          <div class="functional__text">
+            <p>
+              База данных инструмента - технического состояние, обслуживание, ремонт. Информация кто и когда пользовался
+              инструментом и на каком объекте.
+            </p>
+            <p>
+              Резервирование, доставка инструмента на объект. Контроль количества инструмента. Аналитика.
+            </p>
+            <p>
+              Контроль уровней доступа логистов к базе.
+            </p>
+          </div>
+        </div>
+        <div class="functional__image-container">
+          <img class="functional__image" src="img/functional-tools.png" width="829" height="661"/>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="vertical-navigation-section how" id="how">
+    <div class="how__container container container--inner">
+
+      <h2 class="how__title title title--h2">Как устроена Мобильная проходная</h2>
+      <p class="how__paragraph">
+        Система состоит из 2ух частей - десктопной версии и мобильного приложения для Apple и Android. Интерфейс
+        интуитивно понятный не требует обучения, максимально простое внедрение.
+      </p>
+
+      <div class="how__table">
+        <div class="how__column table">
+          <ul class="table__list">
+            <li class="table__item">
+              <h3 class="table__title">Приложение для Apple и Android:</h3>
+            </li>
+            <li class="table__item">Проходная (фейс ID)</li>
+            <li class="table__item">Персонал (упрощенная версия)</li>
+            <li class="table__item">Объекты (просмотр)</li>
+            <li class="table__item">Инструменты (упрощенная версия)</li>
+            <li class="table__item">Мои инструменты</li>
+            <li class="table__item">Уведомления</li>
+          </ul>
+        </div>
+        <div class="how__column table">
+          <ul class="table__list">
+            <li class="table__item">
+              <h3 class="table__title">Десктопная версия для ПК</h3>
+            </li>
+            <li class="table__item">Проходная (ручной вход-для администратора)</li>
+            <li class="table__item">Персонал</li>
+            <li class="table__item">Объекты</li>
+            <li class="table__item">Инструменты</li>
+            <li class="table__item">Мои инструменты</li>
+            <li class="table__item">Уведомления</li>
+            <li class="table__item">Статистика</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="how__video video" id="video">
+        <img class="video__cover" src="img/video.jpg" width="1025" height="576"/>
+        <video class="video__player" controls width="1025" height="576" id="video-player">
+          <source src="img/video.mp4" type="video/mp4">
+          <source src="img/video.webm" type="video/webm">
+        </video>
+        <button class="video__button" id="video-play">
+          <svg class="video__play-icon" width="21" height="19" aria-hidden="true" role="img">
+            <use xlink:href="#icon-play"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="vertical-navigation-section banner" id="banner">
+    <div class="container container--inner banner__container">
+
+      <p class="banner__text">
+        Готовы приступить к работе? <br>
+        Ознакомьтесь с десктопной версией Мобильной проходной.
+      </p>
+
+      <a href="#" class="open-popup banner__button button button--fill button--black">
+        Попробовать дэсктопную demo версию
+      </a>
+
+    </div>
+  </section>
+
+  <section class="vertical-navigation-section advantages" id="advantages">
+    <div class="advantages__container container container--inner">
+      <img class="advantages__mobile-image" src="img/advantages-all-in-one.png" width="673" height="770"/>
+      <div class="advantages__text-container">
+        <h2 class="advantages__title title title--h2">Преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <p class="advantages__name">Минимизирует ошибки</p>
+            <p class="advantages__text">
+              В расчетах заработной платы, рассчитывается автоматически. Вы сэкономите деньги и поддержите репутацию
+              надежного работодателя..
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__name"></p>
+            <p class="advantages__text"></p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__name">Защитит от недобросовестных сотрудников</p>
+            <p class="advantages__text">
+              Минимизирует “человеческий фактор”, так как время начала работ, количество часов потраченных сотрудником
+              отслеживаются автоматически по Face-ID.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__name">Увеличит прибыль</p>
+            <p class="advantages__text">
+              Аналитика позволит рассчитать адекватную цены будущих работ и взглянуть на результаты работы непредвзято,
+              выявить точки роста.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__name">Минимизирует простои</p>
+            <p class="advantages__text">
+              Вы сможете зарезервировать инструмент, перевезти с объекта на объект, будете знать где и в каком состоянии
+              техника, кто с ней работает.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__name">Оптимизирует персонал</p>
+            <p class="advantages__text">
+              Вы будете знать сколько человек на объекте, сможете оперативно подобрать лучшую замену из базы.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__name">Обеспечит безопасность и доступность. </p>
+            <p class="advantages__text">
+              Информация дублируется и хранится в облаке- вы сможете получить данные в любой точки мира. Контроль
+              доступа
+              исключается доступ сотрудников к “лишней информации”.
+            </p>
+          </li>
+          <li class="advantages__item">
+            <p class="advantages__name">Уменьшить стресс.</p>
+            <p class="advantages__text">
+              Контроль из одной системы уменьшит количество ошибок, сделает процесс прозрачным и прогнозируемым.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="advantages__sticky-container">
+        <div class="advantages__images-container">
+          <img class="advantages__image advantages__image--phone" src="img/advantages-iphone.png"
+               width="476" height="770"/>
+          <img class="wow bounceInRight advantages__image advantages__image--message-blue"
+               data-wow-delay="0.1s"
+               data-wow-offset="40"
+               src="img/advantages-message-blue.png"
+               width="331" height="254"/>
+          <img class="wow bounceInRight advantages__image advantages__image--message-green"
+               data-wow-delay="0.3s"
+               data-wow-offset="60"
+               src="img/advantages-message-green.png"
+               width="320" height="259"/>
+          <img class="wow bounceInRight advantages__image advantages__image--message-red"
+               data-wow-delay="0.5s"
+               data-wow-offset="80"
+               src="img/advantages-message-red.png"
+               width="378" height="236"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cover" id="cover">
+    <img class="cover__image" src="img/shuterstock.png" width="1440" height="800"/>
+  </section>
+
+  <section class="vertical-navigation-section reviews" id="reviews">
+    <div class="reviews__container container container--inner">
+
+      <div class="reviews__list">
+        <div id="reviews-slider">
+          <div>
+            <div class="reviews__item review">
+              <p class="review__text">
+                “Неплохо себя зарекомендовала работа с инструментами, неожиданно - выявили несколько сотрудников
+                “ломающих” технику. Удалось уменьшит кол-во простоев.”
+              </p>
+              <p class="review__name">
+                Виктор Знаменский
+              </p>
+              <p class="review__position">
+                Ремонт магазина “Москва Сити”
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="reviews__item review">
+              <p class="review__text">
+                Отзыв 2 “Неплохо себя зарекомендовала работа с инструментами, неожиданно - выявили несколько сотрудников
+                “ломающих”
+                технику. Удалось уменьшит кол-во простоев.”
+              </p>
+              <p class="review__name">
+                Иванов Иван
+              </p>
+              <p class="review__position">
+                Ремонт магазина “Сити”
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="reviews__item review">
+              <p class="review__text">
+                Отзыв 3 “Неплохо себя зарекомендовала работа с инструментами, неожиданно - выявили несколько сотрудников
+                “ломающих”
+                технику. Удалось уменьшит кол-во простоев.”
+              </p>
+              <p class="review__name">
+                Петр Петров
+              </p>
+              <p class="review__position">
+                Ремонт магазина “Москва”
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="reviews__item review">
+              <p class="review__text">
+                “Неплохо себя зарекомендовала работа с инструментами, неожиданно - выявили несколько сотрудников
+                “ломающих” технику. Удалось уменьшит кол-во простоев.”
+              </p>
+              <p class="review__name">
+                Виктор Знаменский
+              </p>
+              <p class="review__position">
+                Ремонт магазина “Москва Сити”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="reviews-controls" class="reviews__nav">
+        <button class="reviews__nav-button reviews__nav-button--prev">
+          <svg class="reviews__nav-icon" width="12" height="8" aria-hidden="true" role="img">
+            <use xlink:href="#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <p class="reviews__nav-progress">
+          <span id="reviews-current-slide">01</span>
+          <span> / </span>
+          <span id="reviews-total-slide">04</span>
+        </p>
+        <button class="reviews__nav-button reviews__nav-button--next">
+          <svg class="reviews__nav-icon" width="12" height="8" aria-hidden="true" role="img">
+            <use xlink:href="#icon-arrow-left"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="vertical-navigation-section rates" id="rates">
+    <div class="rates__container container container--inner">
+
+      <div class="rates__text-container">
+        <h2 class="rates__title title title--h2">
+          Тарифы и цены
+        </h2>
+        <p class="rates__subtitle">
+          Возможна услуга автоматической загрузки данных, доработка системы или ее интеграция под нужды компании.
+          Условия дополнительных работ оговариваются индивидуально.
+        </p>
+      </div>
+
+      <div class="rates__value">
+        <p class="rates__price">950 000 RUB</p>
+        <div class="rates__table table">
+          <ul class="table__list">
+            <li class="table__item">
+              <h3 class="table__title">В стоимость включено:</h3>
+            </li>
+            <li class="table__item">Мобильная проходная дэсктопная версия- без ограничения по времени</li>
+            <li class="table__item">Мобильное приложение- без ограничения по времени</li>
+            <li class="table__item">Развертывание системы</li>
+            <li class="table__item">Год технического обслуживания</li>
+          </ul>
+        </div>
+        <a class="rates__button button button--fill button--black" href="#">
+          Получить консультацию
+        </a>
+        <a class="rates__link link" href="page.html">
+          Технические требования
+        </a>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+
+<footer class="footer bg-black">
+  <div class="footer__container container">
+
+    <div class="footer__row footer__row--top">
+      <div class="footer__column">
+        <div class="footer__logo">
+          <div class="logo">
+            <img class="logo__image" src="img/logo.svg" width="233" height="29"/>
+          </div>
+        </div>
+        <p class="footer__desc">
+          автоматизация строительного бизнеса для подрядных организаций
+        </p>
+      </div>
+
+      <div class="footer__column footer__nav">
+        <div class="footer__contacts">
+          <p class="footer__contacts-title">Адрес</p>
+          <p class="footer__contacts-text">
+            г.Москва. Ул Инициативная д 24 оф 222<br/>
+            <a href="tel:+74958888888">+7(495) 888 88 88</a><br/>
+            <a href="mailto:email.ru">email.ru</a>
+          </p>
+        </div>
+
+        <nav class="footer__menu">
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#functional">Функционал</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#how">Устройство</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#advantages">Преимущества</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="footer__menu-item">
+              <a class="footer__menu-link" href="#rates">Цена</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="footer__row footer__row--middle">
+      <div class="footer__social">
+        <p class="footer__social-title">Соц. сети</p>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <svg class="social__icon" width="22" height="22" aria-hidden="true" role="img">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+            <a href="#" class="social__link"></a>
+          </li>
+          <li class="social__item">
+            <svg class="social__icon" width="22" height="22" aria-hidden="true" role="img">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+            <a href="#" class="social__link"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__row footer__row--bottom">
+      <p class="footer__copyright">
+        © Мобильная проходная. Все права защищены 2021
+      </p>
+      <a href="https://sip-projects.com" class="footer__link">
+        sip-projects.com
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+<div class="popup__bg">
+  <form class="popup">
+    <button class="popup__close" id="close-popup" type="button"></button>
+    <input class="popup__input input" placeholder="Ваше имя" type="text" name="name"/>
+    <input class="popup__input input" placeholder="Ваш телефон" type="tel" name="phone"/>
+    <p class="popup__agreement">
+      Оставляя свои персональные данные вы соглашаетесь с <a href="#">политикой конфиденциальности</a> и <a
+      href="#">обработкой персональных данных.</a>
+    </p>
+    <button class="button button--fill button--black">Отправить</button>
+  </form>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="js/wow.min.js"></script>
+
+<script>
+  window.onload = () => {
+    const isDesktop = window.innerWidth > 992
+
+    /* WOW JS */
+    if (isDesktop) {
+      new WOW().init()
+    }
+    /* END WOW JS */
+
+
+    /* MENU */
+    const body = document.querySelector('body')
+    const burger = document.querySelector('#open-menu')
+    const close = document.querySelector('#close-menu')
+    const menu = document.querySelector('#header-menu')
+
+    const openMenu = () => {
+      body.classList.add('overflow')
+      menu.classList.add('header__menu--open')
+    }
+
+    const closeMenu = () => {
+      body.classList.remove('overflow')
+      menu.classList.remove('header__menu--open')
+    }
+
+    close.addEventListener('click', closeMenu)
+    burger.addEventListener('click', openMenu)
+
+    let menuLinks = document.querySelectorAll('.menu a')
+    for (let item of menuLinks) {
+      item.addEventListener('click', (e) => {
+        closeMenu()
+      })
+    }
+    /* END MENU */
+
+
+    /* ANCHORS */
+    let anchorLinks = document.querySelectorAll('a[href^="#"]')
+    for (let item of anchorLinks) {
+      item.addEventListener('click', (e) => {
+        let hashVal = item.getAttribute('href')
+        let target = document.querySelector(hashVal)
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+        history.pushState(null, null, hashVal)
+        e.preventDefault()
+      })
+    }
+    /* END ANCHORS */
+
+
+    /* POPUP */
+    let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
+    let popup = document.querySelector('.popup'); // Само окно
+    let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
+    let closePopupButton = document.querySelector('#close-popup'); // Кнопка для скрытия окна
+
+    openPopupButtons.forEach((button) => { // Перебираем все кнопки
+      button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+        popup.classList.add('active'); // И для самого окна
+      })
+    })
+    closePopupButton.addEventListener('click', () => { // Вешаем обработчик на крестик
+      popupBg.classList.remove('active') // Убираем активный класс с фона
+      popup.classList.remove('active') // И с окна
+    })
+    document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+      if (e.target === popupBg) { // Если цель клика - фот, то:
+        popupBg.classList.remove('active') // Убираем активный класс с фона
+        popup.classList.remove('active') // И с окна
+      }
+    })
+    /* END POPUP */
+
+
+    /* VERTICAL NAVIGATION */
+    if (isDesktop) {
+      const verticalNavigationSections = document.querySelectorAll('.vertical-navigation-section')
+      const verticalNavigationList = document.querySelector('#vertical-navigation-list')
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const section = entry.target
+            const sectionId = section.getAttribute('id')
+            const activeLink = document.querySelector('.vertical-navigation__link--active')
+            const link = document.querySelector(`#vertical-navigation-list a[href="#${sectionId}"]`)
+
+            activeLink.classList.remove('vertical-navigation__link--active')
+            link.classList.add('vertical-navigation__link--active')
+
+            if (section.classList.contains('bg-black')) {
+              verticalNavigationList.classList.remove('vertical-navigation__list--white-section')
+            } else {
+              verticalNavigationList.classList.add('vertical-navigation__list--white-section')
+            }
+          }
+        })
+      }, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+      })
+      verticalNavigationSections.forEach(i => {
+        observer.observe(i)
+      })
+    }
+    /* END VERTICAL NAVIGATION */
+
+
+    /* FUNCTIONAL IMAGES ANIMATION */
+    if (document.querySelector('#functional') && window.innerWidth > 1140) {
+      const staff = document.querySelector('#functional-staff')
+      const staffImage = document.querySelector('#functional-staff .functional__image-container')
+      const objects = document.querySelector('#functional-objects')
+      const objectsImage = document.querySelector('#functional-objects .functional__image-container')
+      const tools = document.querySelector('#functional-tools')
+      const toolsImage = document.querySelector('#functional-tools .functional__image-container')
+
+      const staffToTop = staff.getBoundingClientRect().top - staff.offsetHeight
+      const objectsToTop = objects.getBoundingClientRect().top - objects.offsetHeight
+      const toolsToTop = tools.getBoundingClientRect().top - tools.offsetHeight
+
+      const functionalImageScroll = () => {
+        const staffScrollPercent = (1 - (window.pageYOffset - staffToTop) / staff.offsetHeight) * 100 + 60
+        const objectsScrollPercent = (1 - (window.pageYOffset - objectsToTop) / objects.offsetHeight) * 100 + 60
+        const toolsScrollPercent = (1 - (window.pageYOffset - toolsToTop) / tools.offsetHeight) * 100 + 60
+        staffImage.style.left = `${staffScrollPercent}%`
+        objectsImage.style.left = `${objectsScrollPercent}%`
+        toolsImage.style.left = `${toolsScrollPercent}%`
+      }
+
+      window.addEventListener('scroll', () => {
+        functionalImageScroll()
+      })
+    }
+    /* END FUNCTIONAL IMAGES ANIMATION */
+
+
+    /* REVIEWS SLIDER */
+    if (document.querySelector('#reviews-slider')) {
+      const sliderCurrentIndexContainer = document.querySelector('#reviews-current-slide')
+      const slider = tns({
+        container: '#reviews-slider',
+        items: 1,
+        slideBy: 'page',
+        preventScrollOnTouch: 'auto',
+        nav: false,
+        prevButton: '.reviews__nav-button--prev',
+        nextButton: '.reviews__nav-button--next',
+      })
+
+      slider.events.on('indexChanged', (info, eventName) => {
+        sliderCurrentIndexContainer.innerHTML = `0${info.displayIndex}`
+      })
+
+      const sliderButtonClick = element => {
+        element.classList.add('click')
+        setTimeout(function () {
+          element.classList.remove('click')
+        }, 500)
+      }
+
+      Array.from(document.querySelectorAll('.reviews__nav-button')).forEach(function (element) {
+        element.addEventListener('click', e => sliderButtonClick(e.target));
+      })
+    }
+    /* END REVIEWS SLIDER */
+
+
+    /* VIDEO */
+    const videoContainer = document.querySelector('#video')
+    if (videoContainer) {
+      const playButton = document.querySelector('#video-play')
+      const player = document.querySelector('#video-player')
+
+      playButton.addEventListener('click', () => {
+        playButton.classList.add('video__button--click')
+        setTimeout(function () {
+          playButton.classList.remove('video__button--click')
+          videoContainer.classList.add('video--play')
+          player.play()
+        }, 300)
+      })
+    }
+    /* END VIDEO */
+  }
+</script>
+
+</body>
+</html>

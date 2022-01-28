@@ -1,0 +1,168 @@
+.advantages {
+  padding-bottom: 125px;
+}
+
+.advantages__container {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 473px;
+
+  list-style: none;
+}
+
+.advantages__item {
+  margin-bottom: 45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__name {
+  margin: 0;
+  margin-bottom: 3px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+}
+
+.advantages__text-container {
+  padding-top: 316px;
+  flex-shrink: 0;
+}
+
+.advantages__text {
+  margin: 0;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.advantages__sticky-container {
+  width: 100%;
+}
+
+.advantages__images-container {
+  position: sticky;
+  z-index: -1;
+  top: 0;
+
+  width: 100%;
+  margin-bottom: 100%;
+}
+
+.advantages__image {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  &--phone {
+    right: 30px;
+  }
+
+  &--message-green {
+    z-index: 2;
+    right: 335px;
+    top: 285px;
+  }
+
+  &--message-red {
+    z-index: 2;
+    top: 525px;
+    right: -16px;
+  }
+
+  &--message-blue {
+    z-index: 2;
+    top: 48px;
+    right: -20px;
+  }
+}
+
+.advantages__mobile-image {
+  display: none;
+}
+
+@media (max-width: 1366px) {
+  .advantages__images-container {
+    margin-bottom: 120%;
+  }
+
+  .advantages__image--message-green {
+    right: 215px;
+    top: 267px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .advantages__images-container {
+    margin-bottom: 135%;
+  }
+
+  .advantages__image {
+    &--phone {
+      top: 120px;
+
+      width: 70%;
+    }
+
+    &--message-green {
+      width: 50%;
+    }
+
+    &--message-red {
+      width: 50%;
+    }
+
+    &--message-blue {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .advantages__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages__sticky-container {
+    display: none;
+  }
+
+  .advantages__mobile-image {
+    display: block;
+    max-width: 60%;
+  }
+
+  .advantages__text-container {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantages {
+    padding-top: 43px;
+    padding-bottom: 55px;
+  }
+
+  .advantages__text-container {
+    width: 100%;
+  }
+
+  .advantages__mobile-image {
+    max-width: 80%;
+    margin-bottom: -7px;
+  }
+}
